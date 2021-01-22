@@ -37,7 +37,7 @@ lint:
 	goimports ./...
 
 up:
-	docker-compose -f docker-compose.yml -f dev/docker-compose.full.yml up -d --remove-orphans statping_sqlite
+	docker-compose -f docker-compose.yml -f dev/docker-compose.full.yml up -d --remove-orphans
 	make print_details
 
 local: clean frontend-build build
